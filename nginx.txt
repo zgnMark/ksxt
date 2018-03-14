@@ -1,0 +1,15 @@
+# nginx configuration
+
+
+#rewrite ^$ /index.php/$1 last;
+#rewrite ^/$ /index.php/index last;
+#rewrite ^/(\w+)/(\w+)/(\w+)/(\w+)/(\w+).html   /index.php/$1/$2/$3/$4/$5 last;
+#rewrite ^/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)	   	/index.php/$1/$2/$3/$4/$5 last;
+#rewrite ^(.*)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+).html   $1/index.php/$2/$3/$4/$5/$6 last;
+
+rewrite ^(.*)/dist/(.*)   $1/dist/$2 last;
+rewrite ^(.*)/uploads/(.*)   $1/uploads/$2 last;
+rewrite ^(.*)/resources/(.*)   $1/resources/$2 last;
+rewrite ^/(.*)$ /index.php/$1 break;
+
+

@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>活动页面</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:Microsoft YHei;
+            background: linear-gradient(to bottom, #3A2448, #0F0E0F);
+        }
+        .top{
+            margin-top: 3rem;
+            width: 100%;
+            height: 10%;
+            text-align: center;
+
+        }
+        span{
+            color: white;
+            font-size: 5rem;
+        }
+        img{
+            width: 100%;
+            height:23%;
+        }
+        .bottom{
+
+        }
+        .content{
+            padding: 8rem;
+            color: white;
+            font-size: 4rem;
+            word-wrap:break-word
+        }
+        button{
+            width: 90%;
+            margin-left: 5%;
+            height: 8rem;
+            background: #58B7E9;
+            color: #58B7E9;
+            border:2px solid;
+            border-radius:25px;
+            -moz-border-radius:25px;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <span class="title">{$title}</span>
+</div>
+<img  src="{$cover_img}" alt="">
+<div class="bottom">
+    <p class="content">{$content}</p>
+</div>
+
+<button><span>分享</span></button>
+</body>
+<html>
